@@ -1,0 +1,104 @@
+/* Signup and Login shared container */
+.signup-container {
+    display: flex;
+    height: 80vh; /* Reduced to make the box float */
+    width: 90%; /* Adjust width to make it responsive */
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 60px auto 0 auto; /* Centers the box horizontally */
+    background-color: white; /* White background for the whole box */
+    border-radius: 10px; /* Smooth border radius for both sides */
+    box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow for floating effect */
+    overflow: hidden; /* Ensures content stays inside rounded box */
+  }
+  
+  .signup-left, .signup-right, .login-right {
+    flex: 1; /* Ensures both sides take equal space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Floating shadow effect */
+  }
+  
+  .signup-left {
+    background-color: #4364f7;
+    color: white;
+    padding: 40px;
+    border-radius: 10px 0 0 10px; /* Rounded left corners */
+  }
+  
+  .signup-left h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .signup-left p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Shared Right Section styles for both signup-right and login-right */
+  .signup-right, .login-right {
+    padding: 40px;
+    background-color: white;
+    border-radius: 0 10px 10px 0; /* Rounded right corners */
+  }
+  
+  .signup-right h2, .login-right h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .signup-right form, .login-right form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-right input, .login-right input {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .signup-right .btn-primary, .login-right .btn-primary {
+    padding: 14px;
+    background-color: #4364f7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .signup-right .social-signup, .login-right .social-signup {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .signup-right .btn-google, .login-right .btn-google {
+    padding: 12px;
+    background-color: #db4437;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .signup-right .login-redirect, .login-right .signup-redirect {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .signup-right .login-redirect a, .login-right .signup-redirect a {
+    color: #4364f7;
+    text-decoration: none;
+  }
+  
+  .signup-right .login-redirect a:hover, .login-right .signup-redirect a:hover {
+    text-decoration: underline;
+  }
+  
